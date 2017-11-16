@@ -1,12 +1,14 @@
 import React from 'react'
 
-import Contador from './Contador'
+import Scoreboard from './Scoreboard'
+
+
 
 export default class App extends React.Component {
     render(){
         return (
         	<div>
-        	  <Contador />
+        	  <Scoreboard />
         	</div>
         	);
     }
