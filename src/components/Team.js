@@ -7,10 +7,10 @@ export default class Team extends React.Component {
     render(){
         return (
         	<div>
-	        	<h2>Grêmio</h2>
-	        	<h1>3</h1>
+	        	<h2>{this.props.name}</h2>
+	        	<h1>{this.props.score}</h1>
     	    	<div>
-        			<Goal />
+        			<Goal increaseScore={this.props.increaseScore} />
         	  	</div>
         	</div>
         	);

@@ -5,8 +5,12 @@ export default class Match extends React.Component {
     render(){
         return (
         	<div>
-                <h3>Grêmio Arena</h3>
-                <p>Nov 16th 2017 - 6pm</p>
+                <h3>{this.props.local}</h3>
+                <div>
+                    <span>{this.props.date} </span>
+                    <span> - </span>
+                    <span>{this.props.time}</span>
+                </div>
     	    	 
         	</div>
         	);
