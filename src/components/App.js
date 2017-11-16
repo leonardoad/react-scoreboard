@@ -20,7 +20,7 @@ export default class App extends React.Component {
     render(){
         return (
         	<div>
-        	  <Scoreboard match={data.match} home={data.home} guest={data.guest} />
+        	  <Scoreboard {...data}/>
         	</div>
         	);
     }
