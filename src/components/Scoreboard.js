@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 
 import Team from './Team'
@@ -45,3 +46,11 @@ export default class Scoreboard extends React.Component {
         	);
     }
 } 
+
+Scoreboard.propTypes = {
+	home: PropTypes.shape({
+		name: PropTypes.string.isRequired,
+	}),
+	match: PropTypes.object.isRequired,
+	guest: PropTypes.object.isRequired,
+}

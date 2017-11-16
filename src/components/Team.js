@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Goal from './Goal'
 
@@ -16,3 +17,8 @@ export default class Team extends React.Component {
         	);
     }
 } 
+
+
+Team.propTypes = {
+    score: PropTypes.number.isRequired, 
+}

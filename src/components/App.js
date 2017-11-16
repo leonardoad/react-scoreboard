@@ -7,6 +7,7 @@ const data = {
 		local: "Grêmio Arena/RS",
 		date: "Nov 16th 2017",
 		time: "10pm",
+		weather: "Sunny"
 	},
 	home: {
 		name: "Gremio",

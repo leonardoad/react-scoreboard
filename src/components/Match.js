@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class Match extends React.Component {
 	 
@@ -11,8 +12,18 @@ export default class Match extends React.Component {
                     <span> - </span>
                     <span>{this.props.time}</span>
                 </div>
+                <div>
+                    <span>{this.props.weather} </span> 
+                </div>
     	    	 
         	</div>
         	);
     }
 } 
+
+
+Match.propTypes = {
+    local: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
+}
